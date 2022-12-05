@@ -26,5 +26,12 @@
         {
             throw new NotImplementedException();
         }
+
+        public class AwsDataObjectImplException : Exception { }
+        public class ObjectAlreadyExistsException : AwsDataObjectImplException { }
+
+        public class ObjectNotFoundException : AwsDataObjectImplException { }
+
+        public class NotEmptyObjectException : AwsDataObjectImplException { }
     }
 }
