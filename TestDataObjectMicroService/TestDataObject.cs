@@ -115,12 +115,22 @@ namespace TestDataObjectMicroService
         }
 
         [Test]
-        public async Task PublishObject_ObjectDoesntExist_ThrowException()
+        public async Task PublishObject_SingleObjectDoesntExist_ThrowException()
         {
             //given
 
             //when
 
+            //then
+        }
+        
+        [Test]
+        public async Task PublishObject_FolderObjectExists_ThrowException()
+        {
+            //given
+            
+            //when
+            
             //then
         }
         #endregion publishObject
